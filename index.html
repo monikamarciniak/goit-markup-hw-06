@@ -463,6 +463,35 @@ height="260"
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="close-btn" data-modal-close>X</button>
+    <form>
+      <p class="modal-title" > Zostaw swoje dane w formularzu poniżej </p>
+      <label>
+        Imię
+        <input tape="text" name="username"/>
+      </label>
+      <label>
+        Telefon
+        <input type="tel" name="phone_number" />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Komentarz
+        <textarea class="form-textarea" name="feedback" rows="6" placeholder="Wprowadź tekst"></textarea>
+      </label>
+      <label class="modal-form-policy-label">
+        <input class="modal-form-policy visually-hidden" type="checkbox" name="form-policy" value="police"  />
+        <span class="modal-form-policy-text">Oświadczam iż akceptuję
+          <a href="#"> Regulamin</a> 
+          <span>i</span>
+          <a href="#"> Politykę Prywatności. </a>
+        </span>  
+      </label>
+      <button class="form-btn" type="submit">Wyślij</button>
+    </form>
+  
   </div>
 </div>
 
