@@ -442,8 +442,8 @@ height="260"
   </ul>
 </div>
 
-<div>
-  <form name="footer-newsletter">
+<div class="footer-newsletter">
+  <form>
     <label class="footer-newsletter-title">
       ZAPISZ SIĘ DO NEWSLETTERA
       <input class="footer-newsletter-input" type="email" name="email" placeholder="E-mail"/>
@@ -467,15 +467,25 @@ height="260"
       <p class="modal-title" > Zostaw swoje dane w formularzu poniżej </p>
       <label>
         Imię
-        <input tape="text" name="username"/>
+        <input class="modal-form" tape="text" name="username"/>
+        <svg class="modal-icon" width="15px" height="15px">
+          <use href="./images/symbol-defs.svg#icon-person-black-18dp-1"></use>
+        </svg>
+        
       </label>
       <label>
         Telefon
         <input type="tel" name="phone_number" />
+        <svg class="modal-icon" width="15px" height="15px">
+          <use href="./images/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+        </svg>
       </label>
       <label>
         Email
         <input type="email" name="email" />
+        <svg class="modal-icon" width="15px" height="15px">
+          <use href="./images/symbol-defs.svg#icon-email-black-18dp-1"></use>
+        </svg>
       </label>
       <label>
         Komentarz
