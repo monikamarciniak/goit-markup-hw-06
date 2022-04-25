@@ -809,8 +809,8 @@ text-align: left;
     margin-top: 20px;
     margin-right: 12px;
     color: var(--third-color);
-
 }
+
 
 .footer-newsletter-btn {
     display: flex;
@@ -823,6 +823,13 @@ text-align: left;
     color: var(--third-color);
     text-align: start;
     padding: 12px 30px 10px 42px;
+    cursor: pointer;
+}
+.footer-newsletter-btn:hover,
+.footer-newsletter-btn:focus {
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .footer-newsletter-icon {
@@ -893,7 +900,7 @@ text-align: left;
 } */
 
 input {
-    padding: 12px 25px;
+    padding: 12px 30px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
@@ -918,13 +925,10 @@ label {
     margin-bottom: 10px;
     margin-left: 40px;
     margin-right: 40px;
-    /* border: 1px solid rgba(33, 33, 33, 0.2); */
     box-sizing: border-box;
     border-radius: 4px;
-    /* position: absolute; */
     width: 448px;
-    /* height: 40px; */
-
+    
     font-size: 12px;
     font-weight: 400;
     line-height: 1.667;
@@ -932,6 +936,18 @@ label {
     text-align: left;
     color: var(--secondary-color);
 }
+
+.modal-form:focus,
+.modal-form:active,
+.modal-form:focus .modal-icon:focus,
+.form-textarea:focus {
+    border: var(--hover-color);
+    fill: var(--hover-color);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 .modal-icon {
     position: absolute;
@@ -957,7 +973,10 @@ label {
     /* background-color: var(--hover-color); */
     border: 1px solid var(--third-color);
     background-image: url(../images/symbol-defs.svg#icon-icon-check);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 .visually-hidden {
     position: absolute !important;
@@ -993,7 +1012,8 @@ text-align: left;
     color: var(--third-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 1px solid #21212133;
-    margin: 30px 164px 40px 164px; 
+    margin: 30px 164px 40px 164px;
+    cursor: pointer; 
 }
 
 .is-hidden {
