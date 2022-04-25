@@ -904,6 +904,7 @@ input {
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+    transition: border;
 }
 
 textarea {
@@ -937,9 +938,9 @@ label {
     color: var(--secondary-color);
 }
 
-.modal-form:focus,
+input:focus,
 .modal-form:active,
-.modal-form:focus .modal-icon:focus,
+.modal-form:focus .modal-icon,
 .form-textarea:focus {
     border: var(--hover-color);
     fill: var(--hover-color);
