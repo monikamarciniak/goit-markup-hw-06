@@ -938,16 +938,15 @@ label {
     color: var(--secondary-color);
 }
 
-input:focus,
-.modal-form:active,
-.modal-form:focus .modal-icon,
+.modal-form:focus,
+.modal-form:focus + .modal-icon,
 .form-textarea:focus {
-    border: var(--hover-color);
+    border-color: var(--hover-color);
     fill: var(--hover-color);
+    outline: none;
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 
 .modal-icon {
