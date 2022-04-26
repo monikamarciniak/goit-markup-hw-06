@@ -152,10 +152,10 @@ margin-right: 93px;
 .nav-list-link:hover,
 .nav-list-link:focus,
 .contact-mail:hover,
-.contact-mail:hover .contact-logo,
+.contact-mail:hover + .contact-logo,
 .contact-mail:focus, 
 .contact-phone-number:hover,
-.contact-phone-number:hover .contact-logo,
+.contact-phone-number:hover + .contact-logo,
 .contact-phone-number:focus,
 .contact-logo:hover,
 .contact-logo:focus {
@@ -163,10 +163,6 @@ margin-right: 93px;
     fill: var(--hover-color);
 }
 
-/* .contact-logo:hover,
-.contact-logo:focus {
-    fill: var(--hover-color);
-} */
 /*===END MENU===*/
 
 /*===HEADER===*/
@@ -972,7 +968,7 @@ label {
 .modal-form-policy:checked + .modal-form-policy-text::before {
     /* background-color: var(--hover-color); */
     border: 1px solid var(--third-color);
-    background-image: url(../images/symbol-defs.svg#icon-icon-check);
+    background-image: url(../images/iconcheck.jpg);
     transition: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
